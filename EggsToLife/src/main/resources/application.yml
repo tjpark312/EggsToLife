@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eggstolife
+logging:
+  level:
+    root: info
+    com.tj: debug
+
+
