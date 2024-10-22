@@ -1,9 +1,22 @@
 spring:
   application:
     name: eggstolife
+  datasource:
+    url: jdbc:mysql://localhost:3306/eggstolife
+    username: root
+    password: 123412341234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 logging:
   level:
     root: info
     com.tj: debug
+
+
+
 
 
