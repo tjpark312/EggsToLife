@@ -10,4 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public interface UserRepository extends JpaRepository<UserEntity, Integer> {
 
     Boolean existsByUsername(String username);
+
+    UserEntity findByUsername(String username);
 }
